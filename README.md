@@ -9,5 +9,6 @@ curl -fsSL -o AutoWarpIp.sh  https://raw.githubusercontent.com/qingee/AutoWarpIp
 
 2、添加crontab脚本任务
 
-crontab -e
+<p>crontab -e
 * */1 * * * /bin/bash /root/AutoWarpIp.sh
+</p>
