@@ -1,5 +1,7 @@
 # AutoWarpIp
-全自动切换到可以解锁奈飞ip脚本
+
+# Cloudflare WARP 一键配置脚本 功能菜单 
+bash <(curl -fsSL git.io/warp.sh) menu
 
 
 1、全自动切换到可以解锁奈飞ip脚本
