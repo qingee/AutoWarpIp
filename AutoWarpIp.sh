@@ -1,5 +1,5 @@
 #!/bin/bash
-Area="SG"
+Area="DE"
 UA_Browser="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36";
 Font_Black="\033[30m";
 Font_Red="\033[31m";
@@ -54,7 +54,7 @@ function MediaUnlockTest() {
     local region=`tr [:lower:] [:upper:] <<< $(curl -${1} --user-agent "${UA_Browser}" -fs --write-out %{redirect_url} --output /dev/null "https://www.netflix.com/title/80018499" | cut -d '/' -f4 | cut -d '-' -f1)` ;
     
     if [[ ! -n "$region" ]];then
-        region="US";
+        region="DE";
     fi
     echo -n -e "\r Netflix:\t\t\t\t${Font_Green}Yes(Region: ${region})${Font_Suffix}\n"
     if [[ "$region" == "$Area" ]];then
