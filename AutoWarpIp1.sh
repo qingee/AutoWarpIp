@@ -72,9 +72,9 @@ show_menu() {
     ————————————————-
     ${green}0.${plain}  退出脚本
     "
-    echo && read -ep "请输入选择 [0-13]: " num
+    echo && read -ep "请输入选择 [1-2]: " num
 
-    case "${1}" in
+    case "${num}" in
     0)
         exit 0
         ;;
